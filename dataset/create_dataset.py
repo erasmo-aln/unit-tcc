@@ -15,7 +15,7 @@ test_csv = test_csv.drop(['Roi.X1', 'Roi.Y1', 'Roi.X2', 'Roi.Y2'], axis=1)
 
 meta_images = list()
 meta_labels = list()
-print("Starting Meta...")
+
 for i, j in enumerate(meta_csv['Path']):
     path = os.path.join(DATASET_PATH, j)
     label = meta_csv['ClassId'][i]
@@ -24,11 +24,10 @@ for i, j in enumerate(meta_csv['Path']):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     meta_images.append(img)
     meta_labels.append(label)
-print("Done...")
 
 train_images = list()
 train_labels = list()
-print("Starting Training...")
+
 for i, j in enumerate(train_csv['Path']):
     path = os.path.join(DATASET_PATH, j)
     label = train_csv['ClassId'][i]
@@ -37,11 +36,10 @@ for i, j in enumerate(train_csv['Path']):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     train_images.append(img)
     train_labels.append(label)
-print("Done...")
 
 test_images = list()
 test_labels = list()
-print("Starting Test...")
+
 for i, j in enumerate(test_csv['Path']):
     path = os.path.join(DATASET_PATH, j)
     label = test_csv['ClassId'][i]
@@ -50,23 +48,19 @@ for i, j in enumerate(test_csv['Path']):
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     test_images.append(img)
     test_labels.append(label)
-print("Done...")
 
-print("Creating Datasets: 0%...")
 train = h5py.File('train.h5', 'w')
 train.create_dataset('Images', data=train_images)
 train.create_dataset('Labels', data=train_labels)
 train.close()
 
-print("Creating Datasets: 33%...")
 test = h5py.File('test.h5', 'w')
 test.create_dataset('Images', data=test_images)
 test.create_dataset('Labels', data=test_labels)
 test.close()
 
-print("Creating Datasets: 66%...")
 meta = h5py.File('meta.h5', 'w')
 meta.create_dataset('Images', data=meta_images)
 meta.create_dataset('Labels', data=meta_labels)
 meta.close()
-print("Creating Datasets: 100%...")
+
