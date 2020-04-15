@@ -1,6 +1,3 @@
-# TrafficSignsClassifier
-A traffic signs classifier using Tensorflow 2
-
 General pipeline:
 
 1) Create Dataset
