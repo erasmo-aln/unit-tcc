@@ -1,3 +1,5 @@
+# Get the images and build a TFRecords Dataset
+
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import os
