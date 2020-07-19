@@ -3,7 +3,7 @@ import pandas as pd
 import h5py
 import cv2
 
-DATASET_PATH = 'German_Traffic_Signs'
+DATASET_PATH = 'data'
 
 meta_csv = pd.read_csv(os.path.join(DATASET_PATH, 'Meta.csv'))
 train_csv = pd.read_csv(os.path.join(DATASET_PATH, 'Train.csv'))
