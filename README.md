@@ -1,6 +1,6 @@
 # Classificação de placas de trânsito com o uso de CNNs
-
-Este é o meu TCC do curso de Engenharia Elétrica, da Universidade Tiradentes. Como o título sugere, foi feita a classificação de diversas placas de trânsito usando CNNs (*Convolutional Neural Networks*).
+## Visão Geral
+Este é o meu TCC do curso de Engenharia Elétrica, da Universidade Tiradentes. Como o título sugere, foi feita a classificação de 43 placas de trânsito usando CNNs (*Convolutional Neural Networks*). Após testar diversas configurações variando alguns parâmetros, o modelo final foi capaz de alcançar 99,66% de acurácia no conjunto de teste, superando o desempenho humano e outros modelos utilizados na competição GTSRB.
 
 *Link para o TCC: [Clique aqui](TCC/TCC.pdf)*
 
