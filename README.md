@@ -35,4 +35,5 @@ Caso queira utilizar o mesmo modelo apresentado no meu TCC, ele está no dispon�
 ### Trabalhos Futuros
 - [ ] Traduzir o `README.md` para inglês;
 - [ ] Traduzir o `Jupyter Notebook` para inglês;
-- [ ] Atualizar o código para o *Tensorflow 2.3*.
+- [ ] Atualizar o código para o *Tensorflow 2.3*;
+- [ ] Migrar de Jupyter Notebook para scripts em Python.
